@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'sometimes/version'
+require 'ocassionally/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "sometimes"
-  spec.version       = Sometimes::VERSION
+  spec.name          = "ocassionally"
+  spec.version       = Ocassionally::VERSION
   spec.authors       = ["Dewayne VanHoozer"]
   spec.email         = ["dvanhoozer@gmail.com"]
-  spec.summary       = %q{Sometimes it works; and, sometimes it doesn't}
+  spec.summary       = %q{Ocassionally it works; and, ocassionally it doesn't}
   spec.description   = %q{Probabilistic conditionals for fuzziness.}
-  spec.homepage      = "http://github.com/MadBomber/sometimes"
+  spec.homepage      = "http://github.com/MadBomber/ocassionally"
   spec.license       = "You want it, its yours"
 
   spec.files         = `git ls-files -z`.split("\x0")

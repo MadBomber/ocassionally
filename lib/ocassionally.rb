@@ -1,4 +1,4 @@
-module Sometimes
+module Ocassionally
 
   def __probability_function(rate)
     rand(100) < rate
@@ -17,7 +17,7 @@ module Sometimes
     return rate, condition
   end
 
-  def __sometimes(rate, condition, block=nil)
+  def __ocassionally(rate, condition, block=nil)
     if __probability_function(rate) && ( String == condition.class ? eval(condition) : condition )
       block.call unless block.nil?
     end
@@ -25,27 +25,27 @@ module Sometimes
 
   def sometimes(*args, &block)
     rate, condition = __get_rate_and_condition(args, 50, true)
-    __sometimes(rate, condition, block)
+    __ocassionally(rate, condition, block)
   end
 
   def ocassionally(*args, &block)
     rate, condition = __get_rate_and_condition(args, 25, true)
-    __sometimes(rate, condition, block)
+    __ocassionally(rate, condition, block)
   end
 
   def seldom(*args, &block)
     rate, condition = __get_rate_and_condition(args, 5, true)
-    __sometimes(rate, condition, block)
+    __ocassionally(rate, condition, block)
   end
 
   def often(*args, &block)
     rate, condition = __get_rate_and_condition(args, 75, true)
-    __sometimes(rate, condition, block)
+    __ocassionally(rate, condition, block)
   end
 
   def very_often(*args, &block)
     rate, condition = __get_rate_and_condition(args, 95, true)
-    __sometimes(rate, condition, block)
+    __ocassionally(rate, condition, block)
   end
 
   def every_time(*args, &block)

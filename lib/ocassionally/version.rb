@@ -1,3 +1,3 @@
-module Sometimes
+module Ocassionally
   VERSION = "0.0.1"
 end
