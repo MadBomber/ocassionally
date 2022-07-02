@@ -1,12 +1,10 @@
 # ocassionally
 
-ocassionally it works; and, ocassionally it doesn't.  Why should
-your program work the same way every time?  That is boring.
-Add some spice to your code.  Make debugging it harder.
-Model real-world things with fuzzy conditionals.
+We all make mistakes occasionally.  Your code should be allowed to as well.  I don't mean the bugs/defects that you occasionally let loose by accident.  I mean on purpose.  Doesn't it feel sometimes like your code is out to get you, or is it just me?  Maybe it is.
 
-Conditional blocks of the 'if' and 'unless' are so black-and-white.
-Add some color to your code with ocassionally.
+ocassionally it works; and, ocassionally it doesn't.  Why should your program work the same way every time?  You don't.  That is boring. Add some spice to your code.  Make debugging it harder. Model real-world things with fuzzy conditionals.
+
+Conditional blocks of the 'if' and 'unless' are so black-and-white. Add some color to your code with ocassionally.
 
 ## Installation
 
@@ -50,9 +48,7 @@ ocassionally("sleep(5)") { puts "Sorry I was sleeping.  What do you want?" }
 
 ```
 
-The order of the two parameters does not matter.  The default for
-the rate is 25% the default for the conditional is true.  So that
-means you can also do this:
+The order of the two parameters does not matter.  The default for the rate is 25% the default for the conditional is true.  So that means you can also do this:
 
 ```ruby
 ocassionally do
@@ -64,19 +60,13 @@ ocassionally(95) do
 end
 ```
 
-If you get tired of ocassionally doing things.  Try
-doing them #sometimes, #seldom, #often, #very_often, #every_time or #never.
+If you get tired of ocassionally doing things.  Try doing them #sometimes, #seldom, #often, #very_often, #every_time or #never.
 
-If you don't like the simplistic #__probability_function(rate)
-then over-ride it with your own.  Its Ruby.  Its your
-play ground.
+If you don't like the simplistic #__probability_function(rate) then over-ride it with your own.  Its Ruby.  Its your play ground.
 
 ## Take a look at this other gem
 
-I originally called this library maybe; but, that got co-opted by
-folks who can't handle nil.  Then I called it sometimes; but, someone else
-already had that gem name which does something similar.  Take a look
-at this one:
+I originally called this library maybe; but, that got co-opted by folks who can't handle nil.  Then I called it sometimes; but, someone else already had that gem name which does something similar.  Take a look at this one:
 
 https://github.com/sudara/sometimes
 
