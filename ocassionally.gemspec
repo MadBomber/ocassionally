@@ -11,6 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Ocassionally it works; and, ocassionally it doesn't}
   spec.description   = %q{Probabilistic conditionals for fuzziness.}
   spec.homepage      = "http://github.com/MadBomber/ocassionally"
+  spec.required_ruby_version = ">= 4.0"
   spec.license       = "You want it, its yours"
 
   spec.files         = `git ls-files -z`.split("\x0")
